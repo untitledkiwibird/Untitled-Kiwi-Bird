@@ -1,54 +1,85 @@
-<style>
-  .risd-cry-sign-in-button {
-    background-color: rgb(16, 98, 198);
-    color: aliceblue;
-    border: none;
-    height: 36px;
-    cursor: pointer;
-    width: 120px;
-    transition: opacity 0.5s;
-    border-radius: 2px  
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kiwi</title>
+    <style>
+        /* Full-Screen Video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Send the video behind other content */
+        }
 
-  .risd-cry-sign-in-button:hover {
-    background-color: rgb(39, 164, 232);
-    opacity: 0.5;
-  }
-  
-  .instagram-button{
-    background-color: rgb(16, 98, 198);
-    color: aliceblue;
-    border: none;
-    height: 36px;
-    cursor: pointer;
-    width: 120px;
-    margin-left: 8px;
-    transition: opacity 0.5s;
-    border-radius: 2px
-  }
+        /* Buttons Container */
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Add spacing between buttons */
+            z-index: 1; /* Ensure buttons appear above everything */
+        }
 
-  .instagram-button:hover {
-    background-color: rgb(39, 164, 232);
-    opacity: 0.5;
-  }
+        /* Button Styles (Your Design) */
+        .risd-cry-sign-in-button {
+            background-color: rgb(16, 98, 198);
+            color: aliceblue;
+            border: none;
+            height: 36px;
+            cursor: pointer;
+            width: 120px;
+            transition: opacity 0.5s;
+            border-radius: 2px;
+        }
 
-  .kiwi-image-button {
-    background-image: image();
-    color: aliceblue;
-    border: none;
-    height: 36px;
-    cursor: pointer;
-    width: 120px;
-    transition: opacity 0.5s;
-    border-radius: 2px  
-  }
+        .risd-cry-sign-in-button:hover {
+            background-color: rgb(39, 164, 232);
+            opacity: 0.5;
+        }
 
-</style>
+        .instagram-button {
+            background-color: rgb(16, 98, 198);
+            color: aliceblue;
+            border: none;
+            height: 36px;
+            cursor: pointer;
+            width: 120px;
+            transition: opacity 0.5s;
+            border-radius: 2px;
+        }
 
-<button class="risd-cry-sign-in-button">
-  RISD CRY SIGN-IN
-</button>
+        .instagram-button:hover {
+            background-color: rgb(39, 164, 232);
+            opacity: 0.5;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Video Background -->
+    <video class="background-video" autoplay loop>
+      <source src="videos/animation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-<button class="instagram-button"> 
-  INSTAGRAM
-</button>
+    <!-- Buttons at the Top -->
+    <div class="top-buttons">
+        <a href="index.html">
+            <button class="risd-cry-sign-in-button">HOME</button>
+        </a>
+
+        <a href="https://docs.google.com/document/d/104Nm6rcP5_QPEbRmAwhxkWlpottrjS6XK7aFmEut8Ao/edit?usp=sharing" target="_blank">
+            <button class="risd-cry-sign-in-button">RISD CRY SIGN-IN</button>
+        </a>
+
+        <button class="instagram-button">INSTAGRAM</button>
+
+</body>
+</html>
